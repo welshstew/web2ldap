@@ -5,7 +5,7 @@ USER root
 RUN yum -y update && \
     yum install -y python-dev libldap2-dev libsasl2-dev libssl-dev python-ldap tar wget
 
-ENV PYTHONPATH "/usr/local/lib/python2.7/site-packages"
+# ENV PYTHONPATH "/usr/local/lib/python2.7/site-packages"
 
 COPY requirements.txt /root
 
