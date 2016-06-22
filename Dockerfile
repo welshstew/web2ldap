@@ -1,7 +1,7 @@
 FROM python:2.7
 
-RUN apt-get update && \
-    apt-get install -y python-dev libldap2-dev libsasl2-dev libssl-dev python-ldap vi
+RUN yum update && \
+    yum install -y python-dev libldap2-dev libsasl2-dev libssl-dev python-ldap tar wget
 
 ENV PYTHONPATH "/usr/local/lib/python2.7/site-packages"
 
