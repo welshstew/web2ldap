@@ -11,7 +11,7 @@ COPY requirements.txt /root
 
 RUN useradd web2ldap
 
-RUN pip install -r /root/requirements.txt && \
+RUN /opt/rh/python27/root/usr/bin/pip install -r /root/requirements.txt && \
     wget https://www.web2ldap.de/download/web2ldap-1.2.61.tar.gz && \
     tar -zxvf web2ldap-1.2.61.tar.gz && \
     mv web2ldap-1.2.61 /opt/web2ldap && \
