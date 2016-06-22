@@ -9,7 +9,7 @@ ENV PYTHONPATH "/usr/local/lib/python2.7/site-packages"
 
 COPY requirements.txt /root
 
-RUN pip install --no-cache-dir -r /root/requirements.txt
+RUN pip install -r /root/requirements.txt
 
 RUN useradd web2ldap
 
