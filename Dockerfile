@@ -30,6 +30,6 @@ USER web2ldap
 
 EXPOSE 1760
 
-RUN chomd +x /opt/web2ldap/web2ldap_postinstall.sh && /opt/web2ldap/web2ldap_postinstall.sh
+# RUN chomd +x /opt/web2ldap/web2ldap_postinstall.sh && /opt/web2ldap/web2ldap_postinstall.sh
 
 CMD sbin/web2ldap.py && tail -F var/log/web2ldap_error_log
