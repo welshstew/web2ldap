@@ -3,7 +3,7 @@ FROM python:2.7
 USER root
 
 RUN yum -y update && \
-    yum install -y python-dev libldap2-dev libsasl2-dev libssl-dev python-ldap tar wget pip
+    yum install -y python-dev libldap2-dev libsasl2-dev libssl-dev python-ldap tar wget python-pip python-wheel
 
 ENV PYTHONPATH "/usr/local/lib/python2.7/site-packages"
 
